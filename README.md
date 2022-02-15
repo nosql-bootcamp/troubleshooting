@@ -26,3 +26,8 @@ Pour résoudre ce souci, il faut empêcher intellij de surcharger la version sbt
 ## Autre souci au lancement de l'application via `~run`
 
 Soyez sûr d'utiliser la version 11 de java (File -> Project Structure -> Langage version)
+
+
+## failed to submit a listener notification task. event loop shut down (dans les logs de marvel heroes)
+
+Un client redis a sans doute été mal fermé, après avoir fait un `redisClient.connect()` et exécuté la requête, il faut faire un `redisClient.close()` dans les méthodes redis.
