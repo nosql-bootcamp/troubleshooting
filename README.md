@@ -18,3 +18,11 @@ PUT /_cluster/settings
     }
 }
 ```
+
+## Problème avec twirl au lancement de l'application marvel-heroes
+
+Pour résoudre ce souci, il faut empêcher intellij de surcharger la version sbt déclarée dans le projet ("disable version override") dans la popup qui apparâit au lancement de l'application.
+
+## Autre souci au lancement de l'application via `~run`
+
+Soyez sûr d'utiliser la version 11 de java (File -> Project Structure -> Langage version)
